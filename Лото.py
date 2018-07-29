@@ -77,25 +77,25 @@ while True:
     comp_step = 90
     comp_score = 0
 
-            comp_cask = random.randint(1, 91)
-            print ('Компьтеру выпал бочонок  с номером ',comp_cask)
-            comp_ans = random.randint(1, 2)
-            if comp_ans == 1:
-                if boch_comp == comp_card:
-                    print('Компьютер получил очко ',)
-                    comp_card.remove(comp_cask)
-                    a = comp_step - 1
-                elif boch != kart:
-                    print('Компьютер проиграл!!!!!')
-            if comp_ans == 2:
-                if boch_comp == kart:
-                    print ("Компьтер проиграл потому, что он выбрал\n не заркивать цифру", boch_comp,"хоть она там была")
-                if boch_comp != kart:
-                    print ('Игра продолжается')
+    comp_cask = random.randint(1, 91)
+    print ('Компьтеру выпал бочонок  с номером ',comp_cask)
+    comp_ans = random.randint(1, 2)
+    if comp_ans == 1:
+        if boch_comp == comp_card:
+            print('Компьютер получил очко ',)
+            comp_card.remove(comp_cask)
+            a = comp_step - 1
+        elif boch != kart:
+            print('Компьютер проиграл!!!!!')
+    if comp_ans == 2:
+        if boch_comp == kart:
+            print ("Компьтер проиграл потому, что он выбрал\n не заркивать цифру", boch_comp,"хоть она там была")
+        if boch_comp != kart:
+            print ('Игра продолжается')
 
-                    for _ in range(3):
-                        print(st_ring(temp))
+            for _ in range(3):
+                print(pl_card(card))
 
-                    for _ in range(3):
-                        print(c_st_ring(kart))
+            for _ in range(3):
+                print(c_card(comp_card))
 
