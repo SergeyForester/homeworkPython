@@ -12,7 +12,7 @@ def arithmetic(a, b, oper):
 	elif oper == '*':
 		return a * b
 	else:
-		return 'ты шо дурак!!'
+		return 'Невозможно'
 
 print(arithmetic(1,0, '/'))		
 #2
